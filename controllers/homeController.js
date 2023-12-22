@@ -2,11 +2,11 @@ const userModel = require("../models/userModel");
 const productModel = require("../models/productModel");
 const favoriteModel = require("../models/favoriteModel");
 const cartModel = require("../models/cartModel");
-const { twilio } = require("../middleware/email");
+// const { twilio } = require("../middleware/email");
 
 const getHome = async (req, res) => {
   // console.log()
-  twilio()
+  // twilio()
   if (req.user) {
     const email = req.user.email;
     const user = await userModel.findOne({ email: email });
