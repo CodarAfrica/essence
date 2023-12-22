@@ -34,7 +34,7 @@ const payment = async (req, res) => {
       postCode: postCode,
       province: province,
       town: town,
-      callback_url: "http://localhost:4100/callback",
+      callback_url: "https://essence-res1.onrender.com/callback",
     };
 
     const createTransaction = await axios.post(
